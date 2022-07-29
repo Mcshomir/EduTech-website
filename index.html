@@ -63,13 +63,14 @@
     <!-- slider design start-->
     <div class="container">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner col-md-6">
                 <div class="carousel-item active">
-                    <img src="images/cover/cover-1.png" class="d-block w-100 img-fluid" alt="...">
-                    <div class="position-absolute  top-50 start-20 text-center text-white ">
+                    <img src="images/cover/cover-1.png" class="d-block  img-fluid" alt="...">
+                    <div class="position-absolute  top-50 start-20 text-center text-white text-details">
 
-                        <h1>Get Started Digital Learning</h1>
-                        <p class="w-50 m-auto my-3">Learning Education elearning instructional design Corporate Learning
+                        <h1 style="font-size: 2vw">Get Started Digital Learning</h1>
+                        <p style="font-size: 1vw" class="w-50 m-auto my-3">Learning Education elearning instructional
+                            design Corporate Learning
                             Learning
                             Technology
                             Learning BlogsHere’s my daily reading list from which I pick and chose every day. The
@@ -80,11 +81,12 @@
 
                 </div>
                 <div class="carousel-item">
-                    <img src="images/cover/cover-2.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <img src="images/cover/cover-2.jpg" class="d-block  img-fluid" alt="...">
                     <div class="position-absolute  top-50 start-20 text-center text-white ">
 
-                        <h1>Get Started Digital Learning</h1>
-                        <p class="w-50 m-auto my-3">Learning Education elearning instructional design Corporate Learning
+                        <h1 style="font-size: 2vw">Get Started Digital Learning</h1>
+                        <p style="font-size: 1vw" class="w-50 m-auto my-3">Learning Education elearning instructional
+                            design Corporate Learning
                             Learning
                             Technology
                             Learning BlogsHere’s my daily reading list from which I pick and chose every day. The
@@ -93,11 +95,12 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/cover/cover-3.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <img src="images/cover/cover-3.jpg" class="d-block  img-fluid" alt="...">
                     <div class="position-absolute  top-50 start-20 text-center text-white ">
 
-                        <h1>Get Started Digital Learning</h1>
-                        <p class="w-50 m-auto my-3">Learning Education elearning instructional design Corporate Learning
+                        <h1 style="font-size: 2vw">Get Started Digital Learning</h1>
+                        <p style="font-size: 1vw" class="w-50 m-auto my-3">Learning Education elearning instructional
+                            design Corporate Learning
                             Learning
                             Technology
                             Learning BlogsHere’s my daily reading list from which I pick and chose every day. The
@@ -188,7 +191,9 @@
                 <h6 class="text-success">price 30$</h6>
             </div>
         </div>
-        <div class="d-none d-xl-block"><input class="btn btn-success" type="button" value="See more courses"></div>
+
+        <div class="d-none d-xl-block"><input class="btn btn-success" type="button" value="See more courses">
+        </div>
     </section>
     <!-- course section end -->
 
@@ -237,19 +242,56 @@
 
 
     <!-- join section start -->
-    <div style="height:200px"
-        class="container bg-primary text-white d-flex flex-lg-row flex-md-column flex-sm-column flex-xs-column justify-content-around align-items-center rounded-2 my-5 py-5">
-        <div class="div text-lg-start text-md-center text-sm-center">
-            <h2>Ready to join </h2>
-            <p>If you want to percess this course just do registion and flow the rules ! </p>
-        </div>
-        <div class="div">
-            <div>
-                <div><a class="btn btn-success d-none d-lg-block" href="index2.html">Register-now</a></div>
-                <div><a class="btn btn-success d-lg-none d-md-block  d-sm-block " href="index2.html">Regitation</a>
-                </div>
+
+
+
+
+
+    <div style="height:200px; " class="container bg-primary text-white rounded-2 my-5 py-5">
+        <div
+            class="d-flex flex-lg-row flex-md-column flex-sm-column flex-xs-column justify-content-around align-items-center">
+            <div class=" text-lg-start text-md-center text-sm-center">
+                <h2>Ready to join </h2>
+                <p>If you want to percess this course just do registion and flow the rules ! </p>
             </div>
+            <!-- modal start -->
+            <div class="d-flex flex-column">
+                <div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        <h5 class="d-none d-lg-block">Register-now</h5>
+                        <h5 class="d-lg-none ">registration</h5>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-success" id="staticBackdropLabel">Registration from</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-success"> Do you want to Registration?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                                    <a href="index2.html"><button type="button" class="btn btn-primary">Yes</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- modal end -->
         </div>
+    </div>
 
     </div>
     <!-- join section end -->
